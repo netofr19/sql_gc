@@ -1,3 +1,2 @@
 SELECT DISTINCT descCountry
-
-FROM tb_players
+FROM tb_players;

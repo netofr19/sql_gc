@@ -1,12 +1,10 @@
-SELECT idPlayer,
-    descCountry,
-    CASE
-        WHEN descCountry = 'br' THEN 'hu3hu3hu3'
-        WHEN descCountry IN ('ar', 'pe', 'uy','py', 'cl', 'bo') THEN 'manito'
-        WHEN descCountry IN ('ca','us') THEN 'na'
-        ELSE 'Foda-se'
+SELECT idPlayer, descCountry,
+    CASE WHEN descCountry= 'br' THEN 'hu3hu3hu3'
+         WHEN descCountry IN ('ar', 'pe', 'uy', 'py', 'cl', 'bo') THEN 'manito'
+         WHEN descCountry IN ('ca', 'us') THEN 'na'
+         ELSE 'Other'
     END AS nacionalidade
-FROM tb_players
+FROM tb_players;
 
     /* cl
      br
